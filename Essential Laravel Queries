@@ -4,3 +4,6 @@ $WaterQuality= WaterQuality::select('*')->whereIn('tank_id',function($query) {
    
    })->get();
    return $WaterQuality;
+   
+   returns entries from WaterQuality with id of tanks table only 
+   
