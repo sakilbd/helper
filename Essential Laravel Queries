@@ -1,0 +1,6 @@
+$WaterQuality= WaterQuality::select('*')->whereIn('tank_id',function($query) {
+
+      $query->select('id')->from('tanks');
+   
+   })->get();
+   return $WaterQuality;
