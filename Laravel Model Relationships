@@ -1,0 +1,9 @@
+ public function getLatestSensorDataForThisTank()
+  {
+    return $this->hasOne(WaterQuality::class)->latest();//returns latest one entry
+  }
+
+  public function getThresholdForThisTank()
+  {
+    return $this->hasMany(TankSensor::class)->latest();
+  }
