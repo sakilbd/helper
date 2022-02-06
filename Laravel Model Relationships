@@ -7,3 +7,10 @@
   {
     return $this->hasMany(TankSensor::class)->latest();
   }
+  
+    public function devices()
+    {
+        return $this->belongsTo(Device::class,'device_id')->with('sensors');
+    }
+  
+  
