@@ -1,0 +1,7 @@
+Route::get('/', 'HomeController@index')->name('root');
+
+@if(Route::currentRouteName() == 'root')
+  //do something
+@else
+ //do something else
+@endif
