@@ -1,0 +1,29 @@
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+npm ERR! code ERR_SOCKET_TIMEOUT
+npm ERR! errno ERR_SOCKET_TIMEOUT
+npm ERR! request to https://registry.npmjs.org/find-cache-dir failed, reason: Socket timeout
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/abhijith/.npm/_logs/2021-04-08T17_06_38_087Z-debug.log
+
+Aborting installation.
+  npm install --save --save-exact --loglevel error react react-dom react-scripts cra-template has failed.
+
+Deleting generated file... package.json
+Deleting myapp/ from /home/abhijith/Desktop/React/firstReact
+Done.
+
+
+
+
+Solution: 
+
+npm config ls -l //to see .npmrc fle directory show 
+npm login // might help to solve the problem but not sure 
+
+
+npm install -g npm@latest
+nvm install node
+npm install -g yarn
