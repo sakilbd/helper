@@ -1,0 +1,4 @@
+Problem: composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 7.3.25.
+
+Solution: composer install --ignore-platform-reqs
+
