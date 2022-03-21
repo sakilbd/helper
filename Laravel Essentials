@@ -5,3 +5,10 @@ Route::get('/', 'HomeController@index')->name('root');
 @else
  //do something else
 @endif
+
+
+
+blade loop varible to js encode : 
+
+ var data = {!! json_encode($peripherals, JSON_HEX_TAG) !!};
+ console.log(data)
