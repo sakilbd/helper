@@ -12,3 +12,7 @@ blade loop varible to js encode :
 
  var data = {!! json_encode($peripherals, JSON_HEX_TAG) !!};
  console.log(data)
+ 
+ 
+ Model relations get specific columns from Relation table.
+ $deviceData = DeviceData::with(['parameter:id,parameter_name,unit','sensor_name:slave_id,sensor_name'])->first();
