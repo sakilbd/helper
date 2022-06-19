@@ -1,0 +1,18 @@
+Loading screen:
+
+to fire loading screen:
+                    Swal.fire({
+                        title: 'Please Wait !',
+                        html: 'Data Executing', // add html attribute if you want or remove
+                        allowOutsideClick: false,
+                        onBeforeOpen: () => {
+                            Swal.showLoading()
+                        },
+                        onAfterClose() {
+                            Swal.hideLoading()
+                        },
+                    });
+                    
+                    
+                    to stop Swal:
+                    Swal.stop();
