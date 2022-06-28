@@ -1,1 +1,2 @@
-
+mv * ../       --- move all to previous directory ...
+chown gym something.zip    ---change ownership of file to another user ----
