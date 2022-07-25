@@ -1,0 +1,4 @@
+.my_class{
+display:flex;
+justify-content:center/space-around/flex-start/flex-end/space-between;
+}
