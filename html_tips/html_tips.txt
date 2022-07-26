@@ -1,0 +1,17 @@
+ //put this code in .css to create invoice or to print webpage 
+ @media print {
+        * {
+            -webkit-print-color-adjust: exact;
+        }
+        html {
+            background: none;
+            padding: 0;
+        }
+        body {
+            box-shadow: none;
+            margin: 0;
+        }
+        span:empty {
+            display: none;
+        }
+    }
