@@ -2,4 +2,4 @@
 2. chown gym something.zip    ---change ownership of file to another user ----
 3. rm -r *      ---- remove all files from current directory 
 4. ls -la   ---check file permissions of a directory 
-
+5. chmod -R 777 public_html  /// change permissions of all public_html folder and subfolders 
