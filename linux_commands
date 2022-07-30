@@ -1,2 +1,5 @@
-mv * ../       --- move all to previous directory ...
-chown gym something.zip    ---change ownership of file to another user ----
+1. mv * ../       --- move all to previous directory ...
+2. chown gym something.zip    ---change ownership of file to another user ----
+3. rm -r *      ---- remove all files from current directory 
+4. ls -la   ---check file permissions of a directory 
+
