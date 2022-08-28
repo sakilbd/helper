@@ -1,0 +1,30 @@
+$.ajax({
+                        type: 'POST',
+                        url: '/api/control-group-fan-speed', //api post call
+                        data: {
+                            _token: "{{ csrf_token() }}",
+                            group_id: periGroup.id,
+                            fan_speed: value,
+
+
+
+                        },
+
+                        error(err) {
+                            console.log(err.responseJSON.message);
+                            // Swal.fire(
+                            //     'errors!',
+                            //     err.responseJSON.message,
+                            //     'error'
+                            // )
+                        },
+
+                        success(response) {
+                            console.log(response.message);
+                            // Swal.fire(
+                            //     'Success!',
+                            //     response.message,
+                            //     'success'
+                            // )
+                        },
+                    });
