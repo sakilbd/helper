@@ -16,3 +16,11 @@ blade loop varible to js encode :
  
  Model relations get specific columns from Relation table.
  $deviceData = DeviceData::with(['parameter:id,parameter_name,unit','sensor_name:slave_id,sensor_name'])->first();
+ 
+ ############
+ string to date converter with seconds add 
+ $myDate = '2022-08-31 05-08-28';
+ $date = Carbon::createFromFormat('Y-m-d h-m-s', $myDate)->addSeconds(2)->format('Y-m-d h-m-s');
+ return $date;
+ 
+ ##############
