@@ -1,0 +1,5 @@
+  $reports = NewWaterParameter::where('tank_id', $request->id)->get()->groupBy(function ($date) {
+         return $date->created_at->format('Y-m-d H-i-s');
+      });
+ $date->created_at->format('Y-m-d H-i-s'); returns 24 hour formate date from query 
+ return $date->created_at->format('Y-m-d h-i-s'); //smaller h return 12 hour formate from query 
