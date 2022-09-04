@@ -1,0 +1,11 @@
+  $fishStatus = FishStatus::with(['fishName:id,species_name','getTank:id,tank_name'])->where('tank_id',$request->id)->get();
+      
+  public function fishName()
+  {
+    return $this->hasOne(Fish::class, 'id', 'fish_id');
+  }
+
+  public function getTank()
+  {
+    return $this->hasOne(Tank::class, 'id', 'tank_id');
+  }
