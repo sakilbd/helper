@@ -20,7 +20,8 @@ blade loop varible to js encode :
  ############
  string to date converter with seconds add 
  $myDate = '2022-08-31 05-08-28';
- $date = Carbon::createFromFormat('Y-m-d h-m-s', $myDate)->addSeconds(2)->format('Y-m-d h-m-s');
+ $date = Carbon::createFromFormat('Y-m-d h-m-s', $myDate)->addSeconds(2)->format('Y-m-d h-m-s'); // for 12 hour time format
+ $date = Carbon::createFromFormat('Y-m-d H-m-s', $myDate)->addSeconds(2)->format('Y-m-d H-m-s'); //for 24 hour time format 
  return $date;
  
  ##############
