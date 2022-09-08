@@ -1,0 +1,22 @@
+https://github.com/topclaudy/compoships
+
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class A extends Model
+{
+    use \Awobaz\Compoships\Compoships;
+    
+    public function b()
+    {
+        return $this->hasMany('B', ['foreignKey1', 'foreignKey2'], ['localKey1', 'localKey2']);
+    }
+}
+
+///
+
+ $thresh = $this->hasMany(Threshold::class,['device_id','slave_id'],['device_id','slave_address']);
+
+
