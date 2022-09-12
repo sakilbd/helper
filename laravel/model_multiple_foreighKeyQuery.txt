@@ -1,5 +1,7 @@
 https://github.com/topclaudy/compoships
 
+composer require awobaz/compoships
+
 
 namespace App;
 
