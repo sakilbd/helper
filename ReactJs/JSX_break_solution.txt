@@ -1,0 +1,18 @@
+https://stackoverflow.com/questions/45558193/how-to-make-vs-code-change-language-to-javascript-react-when-open-a-jsx-file
+1.press ctrl + e in visual studio code
+2.type ">settings json"
+3.select user Settings 
+4. paste no5.
+5.  
+for Reactjs src folders 
+
+"files.associations": {
+    "**/src/**/*.js": "javascriptreact",
+    "**/src/**/*.jsx": "javascriptreact"
+}
+
+for all .js files 
+
+"files.associations": {
+    "*.js": "javascriptreact"
+}
