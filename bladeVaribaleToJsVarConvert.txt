@@ -1,0 +1,1 @@
+ const acData = {!! json_encode($acData, JSON_HEX_TAG) !!};
