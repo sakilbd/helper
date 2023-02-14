@@ -1,1 +1,6 @@
 
+// to kill node server cached stuffs 
+kill -9 $(ps faux | grep node | grep -v grep | awk {'print $2'})
+
+//to delete cached deleted files 
+find /home/mdsakilu/ml.mdsakiluzzaman.com -type f -mtime +7 -exec rm -f {} \;
