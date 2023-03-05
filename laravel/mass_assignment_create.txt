@@ -1,0 +1,13 @@
+// must have fillable properties in model 
+
+$insert_array = [
+                    "device_id" => $device_db_id,
+                    "slave_address" => 1,
+                    "parameter_id" => 1,
+                    "value" => 69,
+                    "device_timeStamps" => $timeStamp,
+                    "sensometer_id" => 1,
+                    "room_id" => 9,
+                ];
+                // return $insert_array;
+                return  dashboard_data::create($insert_array);
